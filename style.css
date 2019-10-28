@@ -1,0 +1,144 @@
+body {
+    padding: 0;
+    margin: 0;
+    display: grid;
+}
+.degree_symbol:not(:empty)::after {
+    content: none;
+}
+
+.owm-legend-item{
+    display: none;
+    background-color: purple;
+}
+#zip {
+    background-color: #5FCE88;
+    width: 400px;
+    height: 25px;
+    padding: none;
+}
+input {
+    color: white;
+    text-align: right;
+    border: none;
+    margin-right: 50px;
+    padding: none;
+}
+#map {
+	width: 600px;
+    height: 600px;
+    background-color: yellow;
+}
+
+.alertbar {
+
+    width: 100%;
+    height: 35px;
+}
+h1 {
+    font-family: gotham;
+    font-size: 1em;
+    color: red;
+    margin-top: 25px;
+    
+}
+.mainpage {
+    display: grid;
+    grid-template-columns: 64% 1% 35%;
+    width: 100%;
+    height: 900px;
+}
+
+.temp_container {
+    display: grid;
+    background-color:rgb(9, 136, 255);
+    height: 900px;
+}
+
+.whiteline {
+    background-color: white;
+    display: grid;
+
+    height: 900px;
+}
+.info_conatiner {
+    display: grid;
+    background-color: #5FCE88;
+    height: 900px;
+}
+
+.forecastwords_container {
+    display: grid;
+    width: 100%;
+    height: 200px;
+    align-items: center;
+}
+
+.forecast_title {
+    display:grid;
+}
+
+.forecastboxes_container {
+    display:grid;
+    background-color: springgreen;
+    width: 100%;
+    height: 800px;
+    align-content: center;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+
+}
+
+.box1 {
+    display: grid;
+    background-color: teal;
+    width: 200px;
+    height: 500px;
+}
+.box2 {
+    display: grid;
+    background-color: orange;
+    width: 200px;
+    height: 500px;
+}
+.box3 {
+    display: grid;
+    background-color: orchid;
+    width: 200px;
+    height: 500px;
+}
+.box4 {
+    display: grid;
+    background-color: coral;
+    width: 200px;
+    height: 500px;
+}
+.box5 {
+    display: grid;
+    background-color: yellow;
+    width: 200px;
+    height: 500px;
+}
+
+h2 {
+    font-family: gotham;
+    font-size: 2em;
+    color:rgb(9, 136, 255);
+
+}
+
+h3 {
+    font-family: gotham;
+    color: white;
+    font-size: 4em;
+    text-align: center;
+    margin-top: 150px;
+    border-bottom: 5px;
+    border-bottom-color: white;
+}
+h4 {
+    font-family: gotham;
+    color: white;
+    font-size: 2em;
+    text-align: left;
+    margin-left: 30px;
+}

@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>Weather</title>
+        <title>weather</title>
 
         <script src="/js/libraries/vue.min.js"></script>
         <script src="keys.js"></script>
@@ -26,36 +26,47 @@
     </head>
 
     <body>
-
-        <div class="alertbar">
-            <h1>ALERT: THERE IS A THUNDERSTORM WARNING IN EFFECT IN YOUR AREA --- ALERT: THERE IS A THUNDERSTORM WARNING IN EFFECT IN YOUR AREA</h1>
-        </div>
-        <div class="mainpage">
-            <div class="temp_container">
-                <h3>TODAY</h3>
-                <h4>TUESDAY OCT. 15</h4>
-            </div>
-            <div class="whiteline"></div>
-            <div class="info_conatiner">
-                <input placeholder="ENTER YOUR ZIP CODE" name="name" id="zip" />
-                <p id="zip_display"></p>
-                <h4>DETAILS</h4>
-            </div>
-        </div>
-        <div class="forecastwords_container">
-            <div class="forecast_title">
-                <h2>YOUR WEEK DAY FORECAST</h2>
-            </div>
-        </div>
-        <div class="forecastboxes_container">
-            <div class="box1"></div>
-            <div class="box2"></div>
-            <div class="box3"></div>
-            <div class="box4"></div>
-            <div class="box5"></div>
-        </div>
         <div class="results" id="app">
-
+            <div class="alertbar">
+                <h1>ALERT: THERE IS A THUNDERSTORM WARNING IN EFFECT IN YOUR AREA --- ALERT: THERE IS A THUNDERSTORM WARNING IN EFFECT IN YOUR AREA</h1>
+            </div>
+            <div class="mainpage">
+                <div class="temp_container">
+                    <div class="word_container">
+                        <div class="date">
+                            <h3>TODAY</h3>
+                            <h5>TUESDAY OCT. 15</h5>
+                        </div>
+                        <div class="temp">
+                            <h3>{{current.temp.current}}ºF</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="whiteline"></div>
+                <div class="info_conatiner">
+                    <input placeholder="ENTER YOUR ZIP CODE" v-on:input="ziptest" name="name" id="zip" />
+                    <p id="zip_display"></p>
+                    <div class="detailsbox">
+                        <h4>DETAILS</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="forecastwords_container">
+                <div class="forecast_title">
+                    <h2>YOUR WEEK DAY FORECAST</h2>
+                </div>
+            </div>
+            <div class="forecastboxes_container">
+                <div class="boxes">
+                    <div class="box1"></div>
+                    <div class="box2"></div>
+                    <div class="box3"></div>
+                    <div class="box4"></div>
+                    <div class="box5"></div>
+                </div>
+            </div>
+        </div>
+    </div>
 
             <!-- <h1>TIME</h1>
             <p>{{time.day}}</p>
@@ -127,7 +138,7 @@
             <p>{{forecast[0].dewpt}}</p>
             <p>{{forecast[0].pres}} mb</p> -->
 
-        </div>
+
         <div id="map"></div>
 
 

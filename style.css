@@ -1,8 +1,21 @@
 body {
     padding: 0;
     margin: 0;
-    display: grid;
+    background-color: coral;
 }
+
+.results {
+    display: grid;
+    width: 100%;
+    height: 900px;
+    background-color: blue;
+}
+
+#app {
+    display:grid;
+    background-color: sandybrown;
+}
+
 .degree_symbol:not(:empty)::after {
     content: none;
 }
@@ -17,6 +30,12 @@ body {
     height: 25px;
     padding: none;
 }
+#zip_display {
+    background-color: cyan;
+    width: 0px;
+    height: 0px;
+    margin: 0px;
+}
 input {
     color: white;
     text-align: right;
@@ -24,14 +43,15 @@ input {
     margin-right: 50px;
     padding: none;
 }
-#map {
-	width: 600px;
-    height: 600px;
-    background-color: yellow;
+
+
+.detailsbox {
+    background-color: orange;
+    width: 100%;
+    height: 50px;
+
 }
-
 .alertbar {
-
     width: 100%;
     height: 35px;
 }
@@ -55,10 +75,18 @@ h1 {
     height: 900px;
 }
 
+.word_container {
+    display: grid;
+    background-color: orange;
+    width: 500px;
+    height: 900px;
+    margin: auto;
+
+}
+
 .whiteline {
     background-color: white;
     display: grid;
-
     height: 900px;
 }
 .info_conatiner {
@@ -80,43 +108,50 @@ h1 {
 
 .forecastboxes_container {
     display:grid;
-    background-color: springgreen;
     width: 100%;
     height: 800px;
     align-content: center;
-    grid-template-columns: 20% 20% 20% 20% 20%;
+    
+}
 
+.boxes{
+    display: grid;
+    width: 100%;
+    height: 700px;
+    margin-left: 2%;
+    align-content: center;
+    grid-template-columns: 20% 20% 20% 20% 20%;
 }
 
 .box1 {
     display: grid;
-    background-color: teal;
+    background: linear-gradient(#007CED,#FFFFFF);
     width: 200px;
-    height: 500px;
+    height: 700px;
 }
 .box2 {
     display: grid;
-    background-color: orange;
+    background: linear-gradient(#007CED,#FFFFFF);
     width: 200px;
-    height: 500px;
+    height: 700px;
 }
 .box3 {
     display: grid;
-    background-color: orchid;
+    background: linear-gradient(#007CED,#FFFFFF);
     width: 200px;
-    height: 500px;
+    height: 700px;
 }
 .box4 {
     display: grid;
-    background-color: coral;
+    background: linear-gradient(#007CED,#FFFFFF);
     width: 200px;
-    height: 500px;
+    height: 700px;
 }
 .box5 {
     display: grid;
-    background-color: yellow;
+    background: linear-gradient(#007CED,#FFFFFF);
     width: 200px;
-    height: 500px;
+    height: 700px;
 }
 
 h2 {
@@ -140,13 +175,22 @@ h4 {
     color: white;
     font-size: 2em;
     text-align: left;
+    height: 50px;
     margin-left: 30px;
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
 
-p1 {
+h5 {
     font-family: gotham;
     color: white;
     font-size: 2em;
     text-align: center;
-    margin-top: -60px;
+    height: 50px;
+}
+
+#map {
+	width: 600px;
+    height: 600px;
+    background-color: yellow;
 }

@@ -1,19 +1,18 @@
 body {
     padding: 0;
     margin: 0;
-    background-color: coral;
+    background-color: white;
 }
 
 .results {
     display: grid;
     width: 100%;
-    height: 900px;
     background-color: blue;
 }
 
 #app {
     display:grid;
-    background-color: sandybrown;
+    background-color: white;
 }
 
 .degree_symbol:not(:empty)::after {
@@ -44,17 +43,26 @@ input {
     padding: none;
 }
 
-
 .detailsbox {
+    display: grid;
     background-color: orange;
     width: 100%;
     height: 50px;
-
+    margin-top:-275px;
 }
+
+.detailswords {
+    display: grid;
+    background-color: black;
+    width: 100%;
+    height: 100px;
+}
+
 .alertbar {
     width: 100%;
     height: 35px;
 }
+
 h1 {
     font-family: gotham;
     font-size: 1em;
@@ -170,6 +178,7 @@ h3 {
     border-bottom: 5px;
     border-bottom-color: white;
 }
+
 h4 {
     font-family: gotham;
     color: white;
@@ -177,8 +186,7 @@ h4 {
     text-align: left;
     height: 50px;
     margin-left: 30px;
-    margin-top: 0px;
-    margin-bottom: 0px;
+    display: grid;
 }
 
 h5 {

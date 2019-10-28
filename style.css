@@ -142,3 +142,11 @@ h4 {
     text-align: left;
     margin-left: 30px;
 }
+
+p1 {
+    font-family: gotham;
+    color: white;
+    font-size: 2em;
+    text-align: center;
+    margin-top: -60px;
+}

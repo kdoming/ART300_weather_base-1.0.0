@@ -41,13 +41,14 @@
                             <h3>{{current.temp.current}}ºF</h3>
                         </div>
                         <div class="location">
-                            <h6>{{city}} location</h6>
+                            <h6>{{city}}</h6>
+                            <h6>{{location.coord.lat}}</h6>
                         </div>
                     </div>
                 </div>
                 <div class="whiteline"></div>
                 <div class="info_conatiner">
-                    <input placeholder="Enter Your ZIP Code" name="name" id="zip" />
+                        <input placeholder="SEARCH NEW LOCATION" v-on:input="zip_trigger" name="name" id="zip" />
                     <!-- <input placeholder="ENTER YOUR ZIP CODE" v-on:input="ziptest" name="name" id="zip" /> -->
                     <p id="zip_display"></p>
                     <div class="detailsbox">
@@ -55,21 +56,21 @@
                     </div>
                     <div class="detailswords">
                         <div class="detailswords_left">
-                            <p>SUNRISE</p>
-                            <p>SUNSET</p>
-                            <p>CHANCE OF RAIN</p>
-                            <p>HUMIDITY</p>
-                            <p>WIND</p>
-                            <p>FEELS LIKE</p>
-                            <p>PRECIPITATION</p>
-                            <p>VISIBILITY</p>
-                            <p>UV INDEX</p>
-                            <p>AIR QUALITY</p>
+                            <p>SUNRISE -----</p>
+                            <p>SUNSET -----</p>
+                            <p>CHANCE OF RAIN -----</p>
+                            <p>HUMIDITY -----</p>
+                            <p>WIND -----</p>
+                            <p>FEELS LIKE -----</p>
+                            <p>PRECIPITATION -----</p>
+                            <p>VISIBILITY -----</p>
+                            <p>UV INDEX -----</p>
+                            <p>AIR QUALITY -----</p>
                         </div>
                         <div class="detailswords_right">
-                            <p>number</p>
-                            <p></p>
-                            <p></p>
+                            <p>{{current.sunrise}}</p>
+                            <p>{{current.sunset}}</p>
+                            <p>{{current.rain}}</p>
                             <p></p>
                             <p></p>
                             <p></p>
@@ -91,7 +92,12 @@
             <div class="forecastboxes_container">
                 <div class="boxes">
                     <div class="box1">
-                        <div class="icon1"></div>
+                        <div class="boxtext1">
+                            <p>TODAY</p>
+                        </div>
+                        <div class="icon1">
+                            <div v-bind:class="'icon_01d'+forecast[1].description_icon"></div>
+                        </div>
                         <div class="boxtemp1"></div>
                     </div>
                     <div class="box2">
@@ -112,6 +118,15 @@
                     </div>
                 </div>
             </div>
+            <div class="icon_01d"></div>
+            <div class="icon_02d"></div>
+            <div class="icon_03d"></div>
+            <div class="icon_04d"></div>
+            <div class="icon_09d"></div>
+            <div class="icon_10d"></div>
+            <div class="icon_11d"></div>
+            <div class="icon_13d"></div>
+            <div class="icon_50d"></div>
         </div>
         <!-- <h1>TIME</h1>
             <p>{{time.day}}</p>
@@ -182,6 +197,6 @@
 
             <p>{{forecast[0].dewpt}}</p>
             <p>{{forecast[0].pres}} mb</p> -->
-        <script src="/js/script.js" type="module"></script>
+        <script src="/js/script.js" ></script>
     </body>
 </html>

@@ -35,6 +35,7 @@ body {
     height: 0px;
     margin: 0px;
 }
+
 input {
     color: white;
     text-align: right;
@@ -45,7 +46,6 @@ input {
 
 .detailsbox {
     display: grid;
-    background-color: orange;
     width: 100%;
     height: 50px;
     margin-top:-275px;
@@ -53,9 +53,20 @@ input {
 
 .detailswords {
     display: grid;
-    background-color: black;
     width: 100%;
     height: 100px;
+    margin-top: -275px;
+    grid-template-columns: 50% 50%;
+}
+
+.detailswords_left {
+    display: grid;
+    margin-left: 35px;
+}
+
+.detailswords_right {
+    display: grid;
+    margin-left: 35px;
 }
 
 .alertbar {
@@ -85,11 +96,24 @@ h1 {
 
 .word_container {
     display: grid;
-    background-color: orange;
     width: 500px;
     height: 900px;
     margin: auto;
+    grid-template-rows: 30% 35% 35%;
+}
 
+.date {
+    display: grid;
+}
+
+.temp {
+    display: grid;
+    background: radial-gradient(rgba(245, 245, 245, 0.66), rgba(9, 136, 255, 0));
+}
+
+.location 
+    display: grid;
+    background-color: darkblue;
 }
 
 .whiteline {
@@ -97,6 +121,7 @@ h1 {
     display: grid;
     height: 900px;
 }
+
 .info_conatiner {
     display: grid;
     background-color: #5FCE88;
@@ -106,7 +131,8 @@ h1 {
 .forecastwords_container {
     display: grid;
     width: 100%;
-    height: 200px;
+    height: 75px;
+    margin-top: 50px;
     align-items: center;
 }
 
@@ -114,12 +140,16 @@ h1 {
     display:grid;
 }
 
+.forecast_title {
+    display: grid;
+    margin-left: 50px;
+}
+
 .forecastboxes_container {
     display:grid;
     width: 100%;
     height: 800px;
-    align-content: center;
-    
+    align-content: center;  
 }
 
 .boxes{
@@ -136,37 +166,125 @@ h1 {
     background: linear-gradient(#007CED,#FFFFFF);
     width: 200px;
     height: 700px;
+    grid-auto-rows: 20% 20%;
 }
+
+.icon1 {
+    display: grid;
+    background-color: green;
+    width: 90px;
+    height: 90px;
+    margin: 25% 25% auto 25%;
+}
+
+.boxtemp1 {
+    display: grid;
+    background-color:lightcoral;
+    width: 90px;
+    height: 300px;
+    margin: 25% 25% auto 25%;
+}
+
 .box2 {
     display: grid;
     background: linear-gradient(#007CED,#FFFFFF);
     width: 200px;
     height: 700px;
+    grid-auto-rows: 20% 20%;
 }
+
+.icon2 {
+    display: grid;
+    background-color: green;
+    width: 90px;
+    height: 90px;
+    margin: 25% 25% auto 25%;
+}
+
+.boxtemp2 {
+    display: grid;
+    background-color:lightcoral;
+    width: 90px;
+    height: 300px;
+    margin: 25% 25% auto 25%;
+}
+
 .box3 {
     display: grid;
     background: linear-gradient(#007CED,#FFFFFF);
     width: 200px;
     height: 700px;
+    grid-auto-rows: 20% 20%;
 }
+
+.icon3 {
+    display: grid;
+    background-color: green;
+    width: 90px;
+    height: 90px;
+    margin: 25% 25% auto 25%;
+}
+
+.boxtemp3 {
+    display: grid;
+    background-color:lightcoral;
+    width: 90px;
+    height: 300px;
+    margin: 25% 25% auto 25%;
+}
+
 .box4 {
     display: grid;
     background: linear-gradient(#007CED,#FFFFFF);
     width: 200px;
     height: 700px;
+    grid-auto-rows: 20% 20%;
 }
+
+.icon4 {
+    display: grid;
+    background-color: green;
+    width: 90px;
+    height: 90px;
+    margin: 25% 25% auto 25%;
+}
+
+.boxtemp4 {
+    display: grid;
+    background-color:lightcoral;
+    width: 90px;
+    height: 300px;
+    margin: 25% 25% auto 25%;
+}
+
 .box5 {
     display: grid;
     background: linear-gradient(#007CED,#FFFFFF);
     width: 200px;
     height: 700px;
+    grid-auto-rows: 20% 20%;
+}
+
+.icon5 {
+    display: grid;
+    background-color: green;
+    width: 90px;
+    height: 90px;
+    margin: 25% 25% auto 25%;
+}
+
+.boxtemp5 {
+    display: grid;
+    background-color:lightcoral;
+    width: 90px;
+    height: 300px;
+    margin: 25% 25% auto 25%;
 }
 
 h2 {
     font-family: gotham;
     font-size: 2em;
     color:rgb(9, 136, 255);
-
 }
 
 h3 {
@@ -197,8 +315,18 @@ h5 {
     height: 50px;
 }
 
-#map {
-	width: 600px;
-    height: 600px;
-    background-color: yellow;
+h6 {
+    font-family: gotham;
+    color: white;
+    font-size: 2em;
+    text-align: center;
+    height: 50px;
+    margin-top: 200px;
+}
+
+p {
+    font-family: gotham;
+    color: white;
+    font-size: 1.1em;
+    text-align: left;
 }

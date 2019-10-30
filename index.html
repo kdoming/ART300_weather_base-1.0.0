@@ -26,7 +26,6 @@
     </head>
 
     <body>
-            <input placeholder="Enter Your ZIP Code" name="name" id="zip" />
         <div class="results" id="app">
             <div class="alertbar">
                 <h1>ALERT: THERE IS A THUNDERSTORM WARNING IN EFFECT IN YOUR AREA --- ALERT: THERE IS A THUNDERSTORM WARNING IN EFFECT IN YOUR AREA</h1>
@@ -36,43 +35,85 @@
                     <div class="word_container">
                         <div class="date">
                             <h3>TODAY</h3>
-                            <h5>TUESDAY OCT. 15</h5>
+                            <h5>{{time.date}}</h5>
                         </div>
                         <div class="temp">
                             <h3>{{current.temp.current}}ºF</h3>
+                        </div>
+                        <div class="location">
+                            <h6>{{city}} location</h6>
                         </div>
                     </div>
                 </div>
                 <div class="whiteline"></div>
                 <div class="info_conatiner">
+                    <input placeholder="Enter Your ZIP Code" name="name" id="zip" />
                     <!-- <input placeholder="ENTER YOUR ZIP CODE" v-on:input="ziptest" name="name" id="zip" /> -->
                     <p id="zip_display"></p>
                     <div class="detailsbox">
                         <h4>DETAILS</h4>
                     </div>
                     <div class="detailswords">
-                        <p>sunrise</p>
+                        <div class="detailswords_left">
+                            <p>SUNRISE</p>
+                            <p>SUNSET</p>
+                            <p>CHANCE OF RAIN</p>
+                            <p>HUMIDITY</p>
+                            <p>WIND</p>
+                            <p>FEELS LIKE</p>
+                            <p>PRECIPITATION</p>
+                            <p>VISIBILITY</p>
+                            <p>UV INDEX</p>
+                            <p>AIR QUALITY</p>
+                        </div>
+                        <div class="detailswords_right">
+                            <p>number</p>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="forecastwords_container">
                 <div class="forecast_title">
-                    <h2>YOUR WEEK DAY FORECAST</h2>
+                    <div class="forecast">
+                        <h2>YOUR WEEK DAY FORECAST</h2>
+                    </div>
                 </div>
             </div>
             <div class="forecastboxes_container">
                 <div class="boxes">
-                    <div class="box1"></div>
-                    <div class="box2"></div>
-                    <div class="box3"></div>
-                    <div class="box4"></div>
-                    <div class="box5"></div>
+                    <div class="box1">
+                        <div class="icon1"></div>
+                        <div class="boxtemp1"></div>
+                    </div>
+                    <div class="box2">
+                        <div class="icon2"></div>
+                        <div class="boxtemp2"></div>
+                    </div>
+                    <div class="box3">
+                        <div class="icon3"></div>
+                        <div class="boxtemp3"></div>
+                    </div>
+                    <div class="box4">
+                        <div class="icon4"></div>
+                        <div class="boxtemp4"></div>
+                    </div>
+                    <div class="box5">
+                        <div class="icon5"></div>
+                        <div class="boxtemp5"></div>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-
-            <!-- <h1>TIME</h1>
+        <!-- <h1>TIME</h1>
             <p>{{time.day}}</p>
             <p>{{time.date}}</p>
             <p>{{time.hour_12}} : {{time.minute}} : {{time.seconds}} {{time.ampm}}</p>
@@ -141,8 +182,6 @@
 
             <p>{{forecast[0].dewpt}}</p>
             <p>{{forecast[0].pres}} mb</p> -->
-
-        <div id="map"></div>
         <script src="/js/script.js" type="module"></script>
     </body>
 </html>

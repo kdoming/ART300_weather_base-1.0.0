@@ -38,11 +38,13 @@
                             <h5>{{time.date}}</h5>
                         </div>
                         <div class="temp">
+                            <br>
                             <h3>{{current.temp.current}}ºF</h3>
                         </div>
                         <div class="location">
-                            <h6>{{city}}</h6>
-                            <h6>{{location.coord.lat}}</h6>
+                            <h6>LAT. {{location.coord.lat}}</h6>
+                            <h6>LONG. {{location.coord.lon}}</h6>
+                            <h6>LOCATION: {{city}}</h6>
                         </div>
                     </div>
                 </div>
@@ -63,7 +65,6 @@
                             <p>WIND -----</p>
                             <p>FEELS LIKE -----</p>
                             <p>PRECIPITATION -----</p>
-                            <p>VISIBILITY -----</p>
                             <p>UV INDEX -----</p>
                             <p>AIR QUALITY -----</p>
                         </div>
@@ -71,13 +72,12 @@
                             <p>{{current.sunrise}}</p>
                             <p>{{current.sunset}}</p>
                             <p>{{current.rain}} xxxx</p>
-                            <p></p>
-                            <p></p>
-                            <p></p>
-                            <p></p>
-                            <p></p>
-                            <p></p>
-                            <p></p>
+                            <p>{{current.humidity}}</p>
+                            <p>{{current.wind.speed}}</p>
+                            <p>{{current.temp.feelslike}}</p>
+                            <p>{{current.pressure}}</p>
+                            <p>{{current.uv}}</p>
+                            <p>{{current.air_quality}}</p>
                         </div>
                     </div>
                 </div>
@@ -93,31 +93,65 @@
                 <div class="boxes">
                     <div class="box1">
                         <div class="boxtext1">
-                            <p>TODAY</p>
+                            <p>{{forecast[0].weekday}}</p>
                         </div>
                         <div class="icon1">
                             <div v-bind:class="'icon_01d'+forecast[1].description_icon"></div>
                         </div>
-                        <div class="boxtemp1"></div>
+                        <div class="boxtemp1">
+                            <h6>TEMPERATURE</h6>
+                            <p  class="degree_symbol">HI: {{forecast[0].max_temp}}</p>
+                            <p  class="degree_symbol">LO: {{forecast[0].min_temp}}</p>
+                        </div>
                     </div>
                     <div class="box2">
+                        <div class="boxtext2">
+                            <p>{{forecast[1].weekday}}</p>
+                        </div>
                         <div class="icon2"></div>
-                        <div class="boxtemp2"></div>
+                        <div class="boxtemp2">
+                            <h6>TEMPERATURE</h6>
+                            <p  class="degree_symbol">HI: {{forecast[1].max_temp}}</p>
+                            <p  class="degree_symbol">LO: {{forecast[1].min_temp}}</p>
+                        </div>
                     </div>
                     <div class="box3">
+                        <div class="boxtext3">
+                            <p>{{forecast[2].weekday}}</p>
+                        </div>
                         <div class="icon3"></div>
-                        <div class="boxtemp3"></div>
+                        <div class="boxtemp3">
+                            <h6>TEMPERATURE</h6>
+                            <p  class="degree_symbol">HI: {{forecast[2].max_temp}}</p>
+                            <p  class="degree_symbol">LO: {{forecast[2].min_temp}}</p>
+                        </div>
                     </div>
                     <div class="box4">
+                        <div class="boxtext4">
+                            <p>{{forecast[3].weekday}}</p>
+                        </div>
                         <div class="icon4"></div>
-                        <div class="boxtemp4"></div>
+                        <div class="boxtemp4">
+                            <h6>TEMPERATURE</h6>
+                            <p  class="degree_symbol">HI: {{forecast[3].max_temp}}</p>
+                            <p  class="degree_symbol">LO: {{forecast[3].min_temp}}</p>
+                        </div>
                     </div>
                     <div class="box5">
+                        <div class="boxtext5">
+                            <p>{{forecast[4].weekday}}</p>
+                        </div>
                         <div class="icon5"></div>
-                        <div class="boxtemp5"></div>
+                        <div class="boxtemp5">
+                            <h6>TEMPERATURE</h6>
+                            <p  class="degree_symbol">HI: {{forecast[4].max_temp}}</p>
+                            <p  class="degree_symbol">LO: {{forecast[4].min_temp}}</p>
+                        </div>
                     </div>
                 </div>
             </div>
+        </div>
+        <!--
             <div class="icon_01d"></div>
             <div class="icon_02d"></div>
             <div class="icon_03d"></div>
@@ -127,8 +161,7 @@
             <div class="icon_11d"></div>
             <div class="icon_13d"></div>
             <div class="icon_50d"></div>
-        </div>
-        <!-- <h1>TIME</h1>
+            <h1>TIME</h1>
             <p>{{time.day}}</p>
             <p>{{time.date}}</p>
             <p>{{time.hour_12}} : {{time.minute}} : {{time.seconds}} {{time.ampm}}</p>

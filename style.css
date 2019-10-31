@@ -23,12 +23,14 @@ body {
     display: none;
     background-color: purple;
 }
+
 #zip {
     background-color: #5FCE88;
     width: 400px;
     height: 25px;
     padding: none;
 }
+
 #zip_display {
     background-color: cyan;
     width: 0px;
@@ -95,7 +97,7 @@ h1 {
 
 .temp_container {
     display: grid;
-    background: radial-gradient(white , #007CED 98%);
+    background: radial-gradient(rgba(255, 255, 255, 0.666), #007CED 70%);
     width: 100%;
     height: 900px;
 }
@@ -170,29 +172,29 @@ h1 {
     background: linear-gradient(#007CED,#FFFFFF);
     width: 200px;
     height: 700px;
-    grid-auto-rows: 20% 20% 20%;
+    grid-auto-rows: 10% 20% 10%;
 }
 
 .boxtext1 {
     display: grid;
-    background-color:orange;
     width: 100%;
     height: 50px;
+    margin: 10px 0px 0px 60px;
+    
 }
 .icon1 {
     display: grid;
+    background-image: url(/01d.png);
     width: 90px;
     height: 90px;
     margin: 25% 25% auto 25%;
 }
 
-
 .boxtemp1 {
     display: grid;
-    background-color:lightcoral;
-    width: 90px;
+    width: 120px;
     height: 300px;
-    margin: 25% 25% auto 25%;
+    margin: 25% 25% auto 20%;
 }
 
 .box2 {
@@ -200,23 +202,33 @@ h1 {
     background: linear-gradient(#007CED,#FFFFFF);
     width: 200px;
     height: 700px;
-    grid-auto-rows: 20% 20%;
+    grid-auto-rows: 10% 20% 10%;
+}
+
+.boxtext2 {
+    display: grid;
+    width: 100%;
+    height: 50px;
+    margin: 10px 0px 0px 60px;
+
 }
 
 .icon2 {
     display: grid;
-    background-color: green;
+    background-image: url(/img/09d.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     width: 90px;
     height: 90px;
-    margin: 25% 25% auto 25%;
+    margin: 25% 25% 0% 25%;
 }
 
 .boxtemp2 {
     display: grid;
-    background-color:lightcoral;
-    width: 90px;
+    width: 120px;
     height: 300px;
-    margin: 25% 25% auto 25%;
+    margin: 25% 25% 0% 20%;
 }
 
 .box3 {
@@ -224,12 +236,22 @@ h1 {
     background: linear-gradient(#007CED,#FFFFFF);
     width: 200px;
     height: 700px;
-    grid-auto-rows: 20% 20%;
+    grid-auto-rows: 10% 20% 10%;
+}
+
+.boxtext3 {
+    display: grid;
+    width: 100%;
+    height: 50px;
+    margin: 10px 0px 0px 60px;
 }
 
 .icon3 {
     display: grid;
-    background-color: green;
+    background-image: url(/01d.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     width: 90px;
     height: 90px;
     margin: 25% 25% auto 25%;
@@ -237,10 +259,9 @@ h1 {
 
 .boxtemp3 {
     display: grid;
-    background-color:lightcoral;
-    width: 90px;
+    width: 120px;
     height: 300px;
-    margin: 25% 25% auto 25%;
+    margin: 25% 25% auto 20%;
 }
 
 .box4 {
@@ -248,23 +269,32 @@ h1 {
     background: linear-gradient(#007CED,#FFFFFF);
     width: 200px;
     height: 700px;
-    grid-auto-rows: 20% 20%;
+    grid-auto-rows: 10% 20% 10%;
+}
+
+.boxtext4 {
+    display: grid;
+    width: 100%;
+    height: 50px;
+    margin: 10px 0px 0px 60px;
 }
 
 .icon4 {
     display: grid;
-    background-color: green;
-    width: 90px;
-    height: 90px;
+    background-image: url(/img/03d.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 100px;
+    height: 100px;
     margin: 25% 25% auto 25%;
 }
 
 .boxtemp4 {
     display: grid;
-    background-color:lightcoral;
-    width: 90px;
+    width: 120px;
     height: 300px;
-    margin: 25% 25% auto 25%;
+    margin: 25% 25% auto 20%;
 }
 
 .box5 {
@@ -272,23 +302,32 @@ h1 {
     background: linear-gradient(#007CED,#FFFFFF);
     width: 200px;
     height: 700px;
-    grid-auto-rows: 20% 20%;
+    grid-auto-rows: 10% 20% 10%;
+}
+
+.boxtext5 {
+    display: grid;
+    width: 100%;
+    height: 50px;
+    margin: 10px 0px 0px 60px;
 }
 
 .icon5 {
     display: grid;
-    background-color: green;
-    width: 90px;
-    height: 90px;
+    background-image: url(/img/03d.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 100px;
+    height: 100px;
     margin: 25% 25% auto 25%;
 }
 
 .boxtemp5 {
     display: grid;
-    background-color:lightcoral;
-    width: 90px;
+    width: 120px;
     height: 300px;
-    margin: 25% 25% auto 25%;
+    margin: 25% 25% auto 20%;
 }
 
 h2 {
@@ -299,7 +338,7 @@ h2 {
 
 h3 {
     font-family: gotham;
-    color: white;
+    color: rgb(255, 255, 255);
     font-size: 4em;
     text-align: center;
     margin-top: 150px;
@@ -328,19 +367,27 @@ h5 {
 h6 {
     font-family: gotham;
     color: white;
-    font-size: 2em;
+    font-size: 1em;
     text-align: center;
-    height: 50px;
-    margin-top: 200px;
+    line-height: 5pt;
+    margin: 0px;
+}
+
+h6:nth-last-of-type(1) {
+    color: #FFFF3F;
 }
 
 p {
     font-family: gotham;
     color: white;
-    font-size: 1.1em;
+    font-size: 1.5em;
     text-align: left;
+    font-variant-caps: all-small-caps;
 }
 
+p.class {
+    line-height: -55px;;
+}
 .icon_01d {
     background-image: url("/01d.png");
     background-repeat: no-repeat;
